@@ -6,7 +6,9 @@
                     <div class="card-header">Example Component</div>
 
                     <div class="card-body">
-                        I'm an example component.
+                         Welcome to Homepage
+                        <br/>
+                    <router-link to="/user">Go to User</router-link>
                     </div>
                 </div>
             </div>
