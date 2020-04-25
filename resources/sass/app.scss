@@ -1,8 +1,19 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
 
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+// Main page
+* {
+    font-family: "SF Pro Display";
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

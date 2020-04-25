@@ -10,9 +10,21 @@ window.Vue = require('vue');
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
+import HomeView from './view/HomeView.vue'
+import MovieView from './view/MovieView.vue'
+import SearchView from './view/SearchView.vue'
+import PageHeader from './components/PageHeader.vue'
+import PageFooter from './components/PageFooter.vue'
+
+Vue.component('page-header', PageHeader);
+Vue.component('page-footer', PageFooter);
+
+
+
 const routes = [
-    { path: '/', component: require('./components/ExampleComponent.vue') },
-    { path: '/user', component: require('./components/User.vue') }
+    { path: '/', component: HomeView, name: 'home',},
+    { path: '/movie/:movieId', component: MovieView,},
+    { path: '/search', component: SearchView, name: 'search',}
   ]
 
 const router = new VueRouter({

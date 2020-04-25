@@ -17,3 +17,35 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+$rouge_kagiso: #FC4748;
+
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url('/fonts/SF-Pro-Display-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url('/fonts/SF-Pro-Display-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url('/fonts/SF-Pro-Display-Heavy.ttf');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    font-style: bold;
+    src: url('/fonts/SF-Pro-Display-Bold.ttf');
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url('/fonts/SF-Pro-Text-Regular.ttf');
+    font-weight: 500;
+}
