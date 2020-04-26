@@ -4,7 +4,9 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+require("bootstrap-css-only/css/bootstrap.min.css");
+require("mdbvue/lib/css/mdb.min.css");
+require("@fortawesome/fontawesome-free/css/all.min.css");
 
 window.Vue = require('vue');
 import VueRouter from 'vue-router'
@@ -15,7 +17,6 @@ import MovieView from './view/MovieView.vue'
 import SearchView from './view/SearchView.vue'
 import PageHeader from './components/PageHeader.vue'
 import PageFooter from './components/PageFooter.vue'
-
 Vue.component('page-header', PageHeader);
 Vue.component('page-footer', PageFooter);
 
