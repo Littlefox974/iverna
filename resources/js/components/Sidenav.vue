@@ -12,13 +12,6 @@
             </ul>
           </li>
           <li>
-            <form class="search-form" role="search">
-              <div class="form-group md-form mt-0 pt-1 ripple-parent" @click="wave">
-                <input type="text" class="form-control" placeholder="Search">
-              </div>
-            </form>
-          </li>
-          <li>
             <mdb-side-nav-nav>
               <mdb-side-nav-cat name="Submit blog" icon="chevron-right">
                 <mdb-side-nav-item href="#">Submit listing</mdb-side-nav-item>
