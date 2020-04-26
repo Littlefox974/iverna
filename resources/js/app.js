@@ -23,9 +23,9 @@ Vue.component('page-footer', PageFooter);
 
 
 const routes = [
-    { path: '/', component: HomeView, name: 'home',},
-    { path: '/movie/:movieId', component: MovieView,},
-    { path: '/search', component: SearchView, name: 'search',}
+    { path: '/', component: HomeView, name: 'home' },
+    { path: '/movie/:movieId', component: MovieView },
+    { path: '/search', component: SearchView, name: 'search' }
   ]
 
 const router = new VueRouter({

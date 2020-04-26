@@ -10,12 +10,10 @@
 </template>
 
 <script>
-import { Slide } from "vue-burger-menu"; // import the CSS transitions you wish to use, in this case we are using `Slide`
 import Navbar from "./Navbar";
 
 export default {
   components: {
-    Slide, // Register your component
     Navbar
   }
 };
@@ -31,13 +29,6 @@ export default {
 }
 .fa-1x {
   font-size: 1.5rem;
-}
-
-.bm-menu {
-  background-color: #d7d7d7;
-}
-.bm-burger-bars {
-  background-color: white;
 }
 </style>
 

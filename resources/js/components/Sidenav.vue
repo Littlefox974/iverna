@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="">
-      <mdb-side-nav logo="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" sideNavClass="sn-bg-4" mask="strong" :OpenedFromOutside.sync="toggleA" hidden waves>
+      <mdb-side-nav mask="strong" :OpenedFromOutside.sync="toggleA" hidden waves>
         <ul>
           <li>
             <ul class="social">
@@ -44,7 +44,7 @@
       </mdb-side-nav>
     </div>
     <div class="text-center icon-div">
-      <mdb-icon icon="bars" size="5x" @click.native="toggleLeftSideNav"/>
+      <mdb-icon icon="bars" size="2x" @click.native="toggleLeftSideNav"/>
     </div>
   </div>
 </template>
@@ -75,15 +75,7 @@
   }
 </script>
 
-<style scoped>
-  .container {
-    height: 750px;
-  }
-  .icon-div {
-    width: 49%;
-    display: inline-block;
-  }
-  .icon-div .fa {
-    cursor: pointer;
-  }
+<style lang="scss">
+@import "resources/sass/app.scss";
+
 </style>

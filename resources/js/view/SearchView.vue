@@ -35,6 +35,7 @@
 
 <script>
 import MovieLine from '../components/MovieLine.vue'
+import axios from 'axios'
 export default {
     components: {
     MovieLine

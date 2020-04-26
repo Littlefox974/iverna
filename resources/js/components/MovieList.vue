@@ -23,6 +23,7 @@
 
 <script>
 import MovieCard from "./MovieCard.vue";
+import axios from 'axios';
 export default {
   components: {
     MovieCard
