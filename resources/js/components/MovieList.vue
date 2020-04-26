@@ -36,7 +36,6 @@ export default {
   mounted() {
     axios.get("http://localhost:8000/api/movie").then(response => {
       this.movies = response.data;
-      console.log(response.data);
     });
   }
 };

@@ -1,5 +1,5 @@
 <template>
-  <mdb-navbar color="white" light>
+  <mdb-navbar color="elegant-color-dark" dark expand="small">
     <sidenav></sidenav>
     <mdb-navbar-brand></mdb-navbar-brand>
     <mdb-navbar-toggler>
@@ -7,7 +7,7 @@
         <mdb-nav-item router to="/">Home</mdb-nav-item>
         <mdb-nav-item router to="search">Search</mdb-nav-item>
         <mdb-dropdown tag="li" class="nav-item">
-          <mdb-dropdown-toggle tag="a" navLink color="white" slot="toggle" waves-fixed>Dropdown</mdb-dropdown-toggle>
+          <mdb-dropdown-toggle tag="a" navLink color="elegant-color-dark" slot="toggle" waves-fixed>Dropdown</mdb-dropdown-toggle>
           <mdb-dropdown-menu>
             <mdb-dropdown-item>Action</mdb-dropdown-item>
             <mdb-dropdown-item>Another action</mdb-dropdown-item>
@@ -18,6 +18,7 @@
       <form>
         <mdb-input
           type="text"
+          v-model="searchString"
           class="text-white"
           placeholder="Search"
           aria-label="Search"
@@ -59,7 +60,17 @@ export default {
     mdbDropdownItem,
     mdbInput,
     sidenav
-  }
+  },
+    data() {
+      return {
+          searchString: null
+      }
+    },
+    watch: {
+        searchString(after, before) {
+            this.$router.push({ name: 'search', param: 'yes' })
+        }
+    }
 };
 </script>
 

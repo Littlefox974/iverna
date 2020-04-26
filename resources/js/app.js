@@ -8,8 +8,10 @@ require("bootstrap-css-only/css/bootstrap.min.css");
 require("mdbvue/lib/css/mdb.min.css");
 require("@fortawesome/fontawesome-free/css/all.min.css");
 
-window.Vue = require('vue');
+import Vue from "vue";
 import VueRouter from 'vue-router'
+
+window.Vue = Vue;
 Vue.use(VueRouter)
 
 import HomeView from './view/HomeView.vue'
@@ -29,7 +31,7 @@ const routes = [
   ]
 
 const router = new VueRouter({
-    routes 
+    routes
 })
 const app = new Vue({
     router

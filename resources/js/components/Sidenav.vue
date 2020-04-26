@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="">
-      <mdb-side-nav mask="strong" :OpenedFromOutside.sync="toggleA" hidden waves>
+      <mdb-side-nav mask="strong" :OpenedFromOutside.sync="toggleA" sideNavClass="elegant-color-dark" hidden waves>
         <ul>
           <li>
             <ul class="social">
@@ -44,7 +44,7 @@
       </mdb-side-nav>
     </div>
     <div class="text-center icon-div">
-      <mdb-icon icon="bars" size="2x" @click.native="toggleLeftSideNav"/>
+      <mdb-icon class="white-text" icon="bars" size="2x" @click.native="toggleLeftSideNav"/>
     </div>
   </div>
 </template>

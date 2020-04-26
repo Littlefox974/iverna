@@ -22,7 +22,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/movie', function (Request $request) {
     return Movies::get();
 });
-//Route qui redirige soit vers un films 
+
+Route::get('/search', 'SearchController@search');
+
+//Route qui redirige soit vers un films
 Route::get('/movie/{n}', function ($n) {
     if ($n === "last") return Movies::get()->sortByDesc('created_at')->first();
     if (intval($n)) return Movies::get()->where('id', intval($n));
